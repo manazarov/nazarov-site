@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikhail Nazarov</title>
+  <meta name="description" content="Mikhail Nazarov - official website launching in September 2026. For inquiries: hello@nazarov.co.nz">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #375587;
+      --text: rgba(255, 255, 255, 0.84);
+      --muted: rgba(255, 255, 255, 0.68);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      font-family: "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 5vw, 72px);
+      background: var(--bg);
+    }
+
+    .name {
+      position: absolute;
+      top: clamp(70px, 10vw, 150px);
+      right: clamp(58px, 10vw, 150px);
+      text-align: right;
+      font-family: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+      font-weight: 400;
+      font-size: clamp(72px, 9vw, 152px);
+      line-height: 0.98;
+      letter-spacing: 0.012em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .info {
+      position: absolute;
+      left: clamp(48px, 7vw, 120px);
+      bottom: clamp(82px, 12vw, 170px);
+      width: min(820px, calc(100% - 96px));
+      text-align: left;
+      font-family: "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 300;
+      font-size: clamp(26px, 2.45vw, 44px);
+      line-height: 1.48;
+      letter-spacing: 0.035em;
+      color: var(--text);
+    }
+
+    .info p {
+      margin: 0 0 clamp(34px, 4vw, 58px) 0;
+    }
+
+    .info a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.36);
+    }
+
+    .location {
+      color: var(--text);
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 28px;
+      }
+
+      .name {
+        top: 58px;
+        right: 30px;
+        font-size: clamp(56px, 17vw, 92px);
+        line-height: 0.98;
+      }
+
+      .info {
+        left: 30px;
+        right: 30px;
+        bottom: 58px;
+        width: auto;
+        font-size: clamp(20px, 5.7vw, 30px);
+        line-height: 1.42;
+        letter-spacing: 0.025em;
+      }
+
+      .info p {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .name {
+        font-size: 56px;
+      }
+
+      .info {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="Mikhail Nazarov temporary website page">
+    <div class="name">
+      MIKHAIL<br>
+      NAZAROV
+    </div>
+
+    <section class="info" aria-label="Website information">
+      <p>Official website launching in September 2026</p>
+
+      <p>
+        For inquiries:<br>
+        <a href="mailto:hello@nazarov.co.nz">hello@nazarov.co.nz</a><br>
+        <span class="location">Auckland, New Zealand</span>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
